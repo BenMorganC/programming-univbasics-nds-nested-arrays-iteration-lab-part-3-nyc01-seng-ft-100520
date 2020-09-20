@@ -9,7 +9,7 @@ def join_nested_strings(src)
       
       while element_index < src[row_index].count do
             
-            if src[row_index][element_index].string?
+            if src[row_index][element_index].string? == src[row_index][element_index]
               nested_strings << src[row_index][element_index]
            
              end
