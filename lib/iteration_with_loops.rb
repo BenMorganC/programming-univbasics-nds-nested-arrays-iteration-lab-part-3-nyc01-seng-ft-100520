@@ -11,12 +11,12 @@ def join_nested_strings(src)
             
             if src[row_index][element_index].to_s == src[row_index][element_index]
               nested_strings << src[row_index][element_index]
-              nested_strings.join(" ")
+              
              end
              element_index += 1 
          end
       
        row_index += 1 
      end
-    all_nested_strings
+    nested_strings
  end
