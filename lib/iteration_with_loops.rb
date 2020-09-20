@@ -1,6 +1,6 @@
 def join_nested_strings(src)
   
-  all_nested_strings = nested_strings.join(" ")
+  nested_strings = " "
   row_index = 0 
   
     while row_index < src.count do
@@ -11,7 +11,7 @@ def join_nested_strings(src)
             
             if src[row_index][element_index].to_s == src[row_index][element_index]
               nested_strings << src[row_index][element_index]
-           
+              nested_strings.join(" ")
              end
              element_index += 1 
          end
